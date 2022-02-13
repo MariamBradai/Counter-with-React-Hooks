@@ -28,6 +28,8 @@ const Counter = () => {
         setTotalTaps(0)
     }
     return (
+        <div>
+            <h2>let's begin</h2>
         <div className="counter">
             <h1> Counter </h1>
             <h1 className="count"> {count} </h1>
@@ -39,7 +41,8 @@ const Counter = () => {
             <div >
                 <button className="reset-count" onClick={handleReset}>Reset</button>
                 <button className="reset-all" onClick={handleResetAll}>Reset All</button>
-            </div>
+            </div>   
+        </div>
         </div>
     )
 }
@@ -54,7 +57,7 @@ const App = (props) => {
         <div>
             <h1>Counter with React Hooks</h1>
             <button className="hideCounter" onClick={toggleCounter}>Hide Counter</button>
-            {counterIsShown && <Counter />}
+            {counterIsShown ?  <Counter />: <h3>Click here </h3> }
         </div>
     )
 }

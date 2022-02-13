@@ -13,7 +13,7 @@ html {
     text-align: center;
 }
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
 }
 .counter {
@@ -51,4 +51,11 @@ button {
 .hideCounter{
     background-color:darkblue ;
     color:white;
+}
+h2{
+    color: rgb(19, 19, 104);
+    padding:10px;
+}
+h3{
+    color: rgb(19, 19, 104);
 }
